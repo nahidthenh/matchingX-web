@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome To Amarmatch</title>
+
+    <!-- ==== css ==== -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/app.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+
+<body>
+
+    <!-- The sidebar -->
+    <div class="sidebar">
+        <div class="sidebar-top">
+            <div class="logo">
+                <a title="Logo" href="dashboard.html">
+                    <img src="assets/images/sidebar/logo.svg" alt="logo">
+                </a>
+            </div>
+            <a title="Dashboard" href="dashboard.html">
+                <img width="20" height="20" src="assets/images/sidebar/dashboard.svg" alt="dashboard">
+            </a>
+            <a title="Search" href="search.html">
+                <img width="20" height="20" src="assets/images/sidebar/search.svg" alt="searchHover">
+            </a>
+            <a title="Pulse" href="pulse.html">
+                <img width="20" height="20" src="assets/images/sidebar/pulse.svg" alt="pulse">
+            </a>
+            <a title="Message" href="chat.html">
+                <img width="20" height="20" src="assets/images/sidebar/chat.svg" alt="chat">
+            </a>
+            <a title="Shorts" href="short.html">
+                <img width="20" height="20" src="assets/images/sidebar/short.svg" alt="short">
+            </a>
+        </div>
+        <div class="sidebar-bottom mb-4">
+            <a title="Pro" href="">
+                <img width="20" height="20" src="assets/images/sidebar/crown.svg" alt="crown">
+            </a>
+            <a title="profile" href="profile.html">
+                <img width="35" height="35" src="assets/images/sidebar/dp.svg" alt="dp">
+            </a>
+            <a title="info" href="info.html">
+                <img width="20" height="20" src="assets/images/sidebar/info.svg" alt="info">
+            </a>
+            <a title="Setting" class="active" href="setting.html">
+                <img width="20" height="20" src="assets/images/sidebar/settingsHover.svg" alt="settings">
+            </a>
+            <a title="Logout" href="signin.html">
+                <img width="20" height="20" src="assets/images/sidebar/sign-out-alt.svg" alt="sign-out">
+            </a>
+        </div>
+
+    </div>
+
+    <!-- Page content -->
+    <div class="content">
+
+        <!-- ==========
+          Header 
+         ========== -->
+        <div class="header-wrap d-flex justify-content-between align-items-center">
+            <div>
+                <div class="header-nav">
+                    <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active" id="pills-profile-tab" data-bs-toggle="pill"
+                                data-bs-target="#Account" type="button" role="tab" aria-controls="Account"
+                                aria-selected="false">Account</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link " id="pills-home-tab" data-bs-toggle="pill"
+                                data-bs-target="#Privacy" type="button" role="tab" aria-controls="Privacy"
+                                aria-selected="true">Privacy</button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div>
+                <button
+                    class="theme-btn px-5 p-3 rounded-2 d-flex align-items-center justify-content-center upgrade-btn"
+                    type="submit">
+                    <img src="assets/images/sidebar/crown.svg" alt="crown">
+                    <span class="ms-2">
+                        UPGRADE
+                    </span>
+                </button>
+            </div>
+        </div>
+        <!-- ==========
+          Header End
+         ========== -->
+        <div class="container">
+            <div class="row">
+                <div class="col-md-10 mx-auto">
+                    <div class="tab-content my-4" id="pills-tabContent">
+                        <!-- Account  -->
+                        <div class="tab-pane fade show active" id="Account" role="tabpanel"
+                            aria-labelledby="pills-disabled-tab" tabindex="0">
+                            <div class="inner-page-account-wrap mt-5">
+                                <form action="" class="auth-form mt-4">
+                                    <div class="row align-items-center">
+                                        <div class="col-md-6 col-xxl-8">
+                                            <div class="mb-3">
+                                                <label for="username" class="form-label">Username</label>
+                                                <input type="username" name="username" class="form-control p-3"
+                                                    id="username" placeholder="enter your username">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-xxl-4 py-3 position-relative">
+                                            <div class="select-gender-title">
+                                                <h6>I'm</h6>
+                                            </div>
+                                            <section class="select-wrap margin ms-1">
+                                                <label class="custom-radio-button__container">
+                                                    <input type="radio" name="radio" checked>
+                                                    <span class="custom-radio-button man">
+                                                        <img class="me-1" src="assets/images/icon/man.svg" alt="man">
+                                                        Man
+                                                    </span>
+                                                </label>
+                                                <label class="custom-radio-button__container">
+                                                    <input type="radio" name="radio">
+                                                    <span class="custom-radio-button woman">
+                                                        <img class="me-1" src="assets/images/icon/woman.svg"
+                                                            alt="woman"> Woman
+                                                    </span>
+                                                </label>
+                                            </section>
+
+                                        </div>
+                                    </div>
+                                    <div class="row align-items-center">
+                                        <div class="col-md-6 col-xxl-8">
+                                            <div class="mb-3">
+                                                <label for="email" class="form-label">Email</label>
+                                                <input type="email" name="email" class="form-control p-3" id="email"
+                                                    placeholder="enter your email">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-xxl-4 py-3">
+                                            <h6>Interested in</h6>
+                                            <section class="select-wrap">
+                                                <article class="feature ">
+                                                    <input type="checkbox" id="feature3">
+                                                    <div class="p-3  form-control man">
+                                                        <img class="me-1" src="assets/images/icon/man.svg" alt="man">
+                                                        Man
+                                                    </div>
+                                                </article>
+                                                <article class="feature ">
+                                                    <input type="checkbox" id="feature3">
+                                                    <div class="p-3 form-control woman">
+                                                        <img class="me-1" src="assets/images/icon/woman.svg"
+                                                            alt="woman">
+                                                        Woman
+                                                    </div>
+                                                </article>
+                                            </section>
+                                        </div>
+                                    </div>
+                                    <div class="row align-items-center">
+                                        <div class="col-md-6 col-xxl-8">
+                                            <div class="mb-3 showPassword">
+                                                <label for="password" class="form-label">Old Password</label>
+                                                <input type="password" name="password" class="form-control p-3"
+                                                    id="password" placeholder="*********">
+                                                <i class="ri-eye-off-line hideEye"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row align-items-center">
+                                        <div class="col-md-6 col-xxl-8">
+                                            <div class="mb-3 showPassword">
+                                                <label for="password" class="form-label">Password</label>
+                                                <input type="password" name="password" class="form-control p-3"
+                                                    id="password" placeholder="*********">
+                                                <i class="ri-eye-off-line hideEye"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row align-items-center">
+                                        <div class="col-md-6 col-xxl-8">
+                                            <div class="mb-3 showPassword">
+                                                <label for="confirmPassword" class="form-label">Confirm Password</label>
+                                                <input type="confirmPassword" name="confirmPassword"
+                                                    class="form-control p-3" id="confirmPassword"
+                                                    placeholder="*********">
+                                                <i class="ri-eye-off-line hideEye"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-12 mx-auto">
+                                            <div class="my-5 text-center">
+                                                <button class="theme-btn w-50 p-3 rounded-2" type="submit">Save
+                                                    Change</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <!-- Privacy  -->
+                        <div class="tab-pane fade" id="Privacy" role="tabpanel" aria-labelledby="pills-profile-tab"
+                            tabindex="0">
+                            <div class="inner-page-privacy-wrap">
+                                <div class="row align-items-center">
+                                    <div class="col-md-6">
+                                        <div class="bg-light inner-page-privacy p-5">
+                                            <h3>Profile Status</h3>
+                                            <p>
+                                                You must be "Searchable" for other members to discover your profile or
+                                                see
+                                                your "Online" status.
+                                                Select "Hidden" to stop your profile from appearing in other members'
+                                                search
+                                                results. However, people you have previously communicated with will be
+                                                able
+                                                to view your profile.
+                                            </p>
+                                            <div class="data-switch">
+                                                <input type="checkbox" id="toggle" class="toggleCheckbox" />
+                                                <label for="toggle" class='toggleContainer'>
+                                                    <div>Searchable</div>
+                                                    <div>Hidden</div>
+                                                </label>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="bg-light inner-page-privacy p-5">
+                                            <h3>Online Status</h3>
+                                            <p>
+                                                You can set yourself as "Offline" for the length of your session so that
+                                                other members will not know you are online. You will be "Online" again
+                                                the
+                                                next time you login.
+                                            </p>
+                                            <div class="data-switch">
+                                                <input type="checkbox" id="toggle2" class="toggleCheckbox" />
+                                                <label for="toggle2" class='toggleContainer'>
+                                                    <div>Online</div>
+                                                    <div>Offline</div>
+                                                </label>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Main Content End  -->
+    </div>
+
+    <!-- ==== Script File ==== -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/app.js"></script>
+</body>
+
+</html>

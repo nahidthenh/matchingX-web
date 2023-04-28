@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome To Amarmatch</title>
+
+    <!-- ==== css ==== -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/app.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+
+<body>
+
+    <!-- The sidebar -->
+    <div class="sidebar">
+        <div class="sidebar-top">
+            <div class="logo">
+                <a title="Logo" href="dashboard.html">
+                    <img src="assets/images/sidebar/logo.svg" alt="logo">
+                </a>
+            </div>
+            <a title="Dashboard" href="dashboard.html">
+                <img width="20" height="20" src="assets/images/sidebar/dashboard.svg" alt="dashboard">
+            </a>
+            <a title="Search" href="search.html">
+                <img width="20" height="20" src="assets/images/sidebar/search.svg" alt="searchHover">
+            </a>
+            <a title="Pulse" href="pulse.html">
+                <img width="20" height="20" src="assets/images/sidebar/pulse.svg" alt="pulse">
+            </a>
+            <a title="Message" href="chat.html">
+                <img width="20" height="20" src="assets/images/sidebar/chat.svg" alt="chat">
+            </a>
+            <a title="Shorts" href="short.html">
+                <img width="20" height="20" src="assets/images/sidebar/short.svg" alt="short">
+            </a>
+        </div>
+        <div class="sidebar-bottom mb-4">
+            <a title="Pro" href="">
+                <img width="20" height="20" src="assets/images/sidebar/crown.svg" alt="crown">
+            </a>
+            <a title="profile" href="profile.html">
+                <img width="35" height="35" class="" src="assets/images/sidebar/dp.svg" alt="dp">
+            </a>
+            <a title="info" href="info.html">
+                <img width="20" height="20" src="assets/images/sidebar/info.svg" alt="info">
+            </a>
+            <a title="Setting" href="setting.html">
+                <img width="20" height="20" src="assets/images/sidebar/settings.svg" alt="settings">
+            </a>
+            <a title="Logout" href="signin.html">
+                <img width="20" height="20" src="assets/images/sidebar/sign-out-alt.svg" alt="sign-out">
+            </a>
+        </div>
+
+    </div>
+
+
+    <!-- Page content -->
+    <div class="content bg-gray">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="profile-header-wrap">
+                        <div class="user-profile-cover"></div>
+                        <div class="profile-dp">
+                            <div class="position-relative">
+                                <img class="rounded-circle" width="180" height="180" src="assets/images/user.png"
+                                    alt="user">
+                            </div>
+                            <div class="ms-3 mt-50">
+                                <h5>James Aaron, <span>26</span></h5>
+                                <p class="person-location">
+                                    <i class="ri-map-pin-2-line"></i> 4 Km away
+                                </p>
+                            </div>
+                            <div class="ms-3 mt-50">
+                                <button class="people-item-btn me-2">
+                                    <img src="assets/images/icon/chat.svg" alt="Chat" width="35">
+                                </button>
+                                <button class="people-item-btn">
+                                    <img src="assets/images/icon/heart.svg" alt="heart" width="35">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="profile-main-wrap">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="profile-bio p-3 mb-3">
+                                    <p>
+                                        I m simple sunni muslim looking for a muslim namazi who believes in Allah. I
+                                        pray five times, have complete faith in
+                                        my Allah. I am looking for a companion who follows sunnahs and speaks truth.
+                                    </p>
+                                </div>
+                                <div class="profile-info p-3">
+                                    <form action="">
+                                        <div class="row">
+                                            <div class="col-6 p-4">
+
+                                                <div class="range-slider-wrap mt-4">
+                                                    <div class="d-flex justify-content-between align-items-center mb-4">
+                                                        <div class="slider-title">
+                                                            <h6>Age</h6>
+                                                        </div>
+                                                        <div class="slider-title">
+                                                            <h6>23</h6>
+                                                        </div>
+                                                    </div>
+                                                    <div class="range-slider"
+                                                        style="--range-slider-value-low: 0; --range-slider-value-high: 100;">
+                                                        <input disabled type="range" min="0" max="100" step="1"
+                                                            value="0" class="range-slider__input">
+                                                        <!-- <input disabled type="range" min="0" max="100" step="1"
+                                                            value="100" class="range-slider__input"> -->
+                                                        <div class="range-slider__display" data-low="0" data-high="100">
+                                                            <!-- This node is optional and only used to display the current values -->
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="range-slider-wrap mt-5">
+                                                    <div class="d-flex justify-content-between align-items-center mb-4">
+                                                        <div class="slider-title">
+                                                            <h6>Height</h6>
+                                                        </div>
+                                                        <div class="slider-title">
+                                                            <h6>5'10"</h6>
+                                                        </div>
+                                                    </div>
+                                                    <div class="range-slider"
+                                                        style="--range-slider-value-low: 0; --range-slider-value-high: 100;">
+                                                        <input disabled type="range" min="0" max="100" step="1"
+                                                            value="0" class="range-slider__input">
+                                                        <input disabled type="range" min="0" max="100" step="1"
+                                                            value="100" class="range-slider__input">
+                                                        <div class="range-slider__display" data-low="0" data-high="100">
+                                                            <!-- This node is optional and only used to display the current values -->
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="mt-5">
+                                                    <div class="slider-title mb-4">
+                                                        <h6>Marriage</h6>
+                                                    </div>
+                                                    <select disabled class="form-select form-control p-3"
+                                                        aria-label="Default select example">
+                                                        <option selected="">Select One</option>
+                                                        <option value="1">Married</option>
+                                                        <option value="2">Un Married</option>
+                                                    </select>
+                                                </div>
+
+                                                <div class="mt-5">
+                                                    <div class="slider-title mb-4">
+                                                        <h6>Religion</h6>
+                                                    </div>
+                                                    <select disabled class="form-select form-control p-3"
+                                                        aria-label="Default select example">
+                                                        <option selected="">Select One</option>
+                                                        <option value="1">Islam</option>
+                                                        <option value="2">Hindu</option>
+                                                        <option value="2">Jues</option>
+                                                    </select>
+                                                </div>
+
+                                                <div class="range-slider-wrap mt-5">
+                                                    <div class="d-flex justify-content-between align-items-center mb-4">
+                                                        <div class="slider-title">
+                                                            <h6>Annual income</h6>
+                                                        </div>
+                                                        <div class="slider-title">
+                                                            <h6>BDT55K</h6>
+                                                        </div>
+                                                    </div>
+                                                    <div class="range-slider"
+                                                        style="--range-slider-value-low: 0; --range-slider-value-high: 100;">
+                                                        <input disabled type="range" min="0" max="100" step="1"
+                                                            value="0" class="range-slider__input">
+                                                        <input disabled type="range" min="0" max="100" step="1"
+                                                            value="100" class="range-slider__input">
+                                                        <div class="range-slider__display" data-low="0" data-high="100">
+                                                            <!-- This node is optional and only used to display the current values -->
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="mt-5">
+                                                    <div class="slider-title mb-5">
+                                                        <h6>Education</h6>
+                                                    </div>
+                                                    <select disabled class="form-select form-control p-3"
+                                                        aria-label="Default select example">
+                                                        <option selected="">Select One</option>
+                                                        <option value="1">Islam</option>
+                                                        <option value="2">Hindu</option>
+                                                        <option value="2">Jues</option>
+                                                    </select>
+                                                </div>
+                                                <div class="mt-5">
+                                                    <div class="slider-title mb-4">
+                                                        <h6>Working with</h6>
+                                                    </div>
+                                                    <select disabled class="form-select form-control p-3"
+                                                        aria-label="Default select example">
+                                                        <option selected="">Select One</option>
+                                                        <option value="1">Islam</option>
+                                                        <option value="2">Hindu</option>
+                                                        <option value="2">Jues</option>
+                                                    </select>
+                                                </div>
+
+                                                <div class="mt-5">
+                                                    <div class="slider-title mb-4">
+                                                        <h6>Proffession area</h6>
+                                                    </div>
+                                                    <select disabled class="form-select form-control p-3"
+                                                        aria-label="Default select example">
+                                                        <option selected="">Select One</option>
+                                                        <option value="1">Islam</option>
+                                                        <option value="2">Hindu</option>
+                                                        <option value="2">Jues</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="col-6 p-4">
+                                                <div class="mt-4">
+                                                    <div class="slider-title mb-4">
+                                                        <h6>Community</h6>
+                                                    </div>
+                                                    <select disabled class="form-select form-control p-3"
+                                                        aria-label="Default select example">
+                                                        <option selected="">Select One</option>
+                                                        <option value="1">Islam</option>
+                                                        <option value="2">Hindu</option>
+                                                        <option value="2">Jues</option>
+                                                    </select>
+                                                </div>
+                                                <div class="mt-4">
+                                                    <div class="slider-title mb-4">
+                                                        <h6>Language</h6>
+                                                    </div>
+                                                    <select disabled class="form-select form-control p-3"
+                                                        aria-label="Default select example">
+                                                        <option selected="">Select One</option>
+                                                        <option value="1">Islam</option>
+                                                        <option value="2">Hindu</option>
+                                                        <option value="2">Jues</option>
+                                                    </select>
+                                                </div>
+                                                <div class="mt-4">
+                                                    <div class="slider-title mb-4">
+                                                        <h6>Country</h6>
+                                                    </div>
+                                                    <select disabled class="form-select form-control p-3"
+                                                        aria-label="Default select example">
+                                                        <option selected="">Select One</option>
+                                                        <option value="1">Islam</option>
+                                                        <option value="2">Hindu</option>
+                                                        <option value="2">Jues</option>
+                                                    </select>
+                                                </div>
+                                                <div class="mt-5">
+                                                    <div class="slider-title mb-4">
+                                                        <h6>Division</h6>
+                                                    </div>
+                                                    <select disabled class="form-select form-control p-3"
+                                                        aria-label="Default select example">
+                                                        <option selected="">Select One</option>
+                                                        <option value="1">Islam</option>
+                                                        <option value="2">Hindu</option>
+                                                        <option value="2">Jues</option>
+                                                    </select>
+                                                </div>
+                                                <div class="mt-5">
+                                                    <div class="slider-title mb-4">
+                                                        <h6>Profile created by</h6>
+                                                    </div>
+                                                    <select disabled class="form-select form-control p-3"
+                                                        aria-label="Default select example">
+                                                        <option selected="">Select One</option>
+                                                        <option value="1">Islam</option>
+                                                        <option value="2">Hindu</option>
+                                                        <option value="2">Jues</option>
+                                                    </select>
+                                                </div>
+                                                <div class="mt-5">
+                                                    <div class="slider-title mb-4">
+                                                        <h6>Diet</h6>
+                                                    </div>
+                                                    <select disabled class="form-select form-control p-3"
+                                                        aria-label="Default select example">
+                                                        <option selected="">Select One</option>
+                                                        <option value="1">Islam</option>
+                                                        <option value="2">Hindu</option>
+                                                        <option value="2">Jues</option>
+                                                    </select>
+                                                </div>
+                                                <div class="mt-5">
+                                                    <div class="slider-title mb-4">
+                                                        <h6>Drink & Smoke</h6>
+                                                    </div>
+                                                    <select disabled class="form-select form-control p-3"
+                                                        aria-label="Default select example">
+                                                        <option selected="">Select One</option>
+                                                        <option value="1">Islam</option>
+                                                        <option value="2">Hindu</option>
+                                                        <option value="2">Jues</option>
+                                                    </select>
+                                                </div>
+                                                <div class="mt-5">
+                                                    <div class="slider-title mb-4">
+                                                        <h6>Disabilities</h6>
+                                                    </div>
+                                                    <select disabled class="form-select form-control p-3"
+                                                        aria-label="Default select example">
+                                                        <option selected="">Select One</option>
+                                                        <option value="1">Islam</option>
+                                                        <option value="2">Hindu</option>
+                                                        <option value="2">Jues</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <!-- <div class="col-6 mx-auto text-center mt-3">
+                                                <button type="button" class="theme-btn w-100 p-3 rounded-2 mb-5">Next</button>                                               
+                                            </div> -->
+                                        </div>
+                                    </form>
+
+
+                                </div>
+                            </div>
+                            <!-- Profile feature Image  -->
+                            <div class="col-md-6">
+                                <div class="feature-image-wrap">
+                                    <div class="row row-cols-1 row-cols-md-3 g-2"
+                                        data-masonry='{"percentPosition": true,  "itemSelector": ".col" }'>
+                                        <div class="col">
+                                            <img class="img-fluid rounded-3" src="assets/images/auth/0.png" alt="">
+                                        </div>
+                                        <div class="col">
+                                            <img class="img-fluid rounded-3" src="assets/images/auth/3.png" alt="">
+                                        </div>
+                                        <div class="col">
+                                            <img class="img-fluid rounded-3" src="assets/images/auth/2.png" alt="">
+                                        </div>
+                                        <div class="col">
+                                            <img class="img-fluid rounded-3" src="assets/images/auth/3.png" alt="">
+                                        </div>
+                                        <div class="col">
+                                            <img class="img-fluid rounded-3" src="assets/images/auth/0.png" alt="">
+                                        </div>
+                                        <div class="col">
+                                            <img class="img-fluid rounded-3" src="assets/images/auth/2.png" alt="">
+                                        </div>
+                                        <div class="col">
+                                            <img class="img-fluid rounded-3" src="assets/images/auth/0.png" alt="">
+                                        </div>
+                                        <div class="col">
+                                            <img class="img-fluid rounded-3" src="assets/images/auth/0.png" alt="">
+                                        </div>
+                                        <div class="col">
+                                            <img class="img-fluid rounded-3" src="assets/images/auth/3.png" alt="">
+                                        </div>
+                                        <div class="col">
+                                            <img class="img-fluid rounded-3" src="assets/images/auth/2.png" alt="">
+                                        </div>
+                                        <div class="col">
+                                            <img class="img-fluid rounded-3" src="assets/images/auth/3.png" alt="">
+                                        </div>
+                                        <div class="col">
+                                            <img class="img-fluid rounded-3" src="assets/images/auth/0.png" alt="">
+                                        </div>
+                                        <div class="col">
+                                            <img class="img-fluid rounded-3" src="assets/images/auth/2.png" alt="">
+                                        </div>
+                                        <div class="col">
+                                            <img class="img-fluid rounded-3" src="assets/images/auth/0.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Main Content End  -->
+    </div>
+
+    <!-- ==== Script File ==== -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+    <script src="assets/js/app.js"></script>
+</body>
+
+</html>

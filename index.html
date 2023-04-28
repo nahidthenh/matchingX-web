@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome To Amarmatch</title>
+
+    <!-- ==== css ==== -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/app.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+
+<body>
+
+    <main class="auth-wrap">
+        <div class="container-fluid">
+            <div class="row align-items-center vh-100">
+                <div class="col-xl-6 px-150">
+                    <div class="auth-content">
+                        <h1>Welcome back</h1>
+                        <p>
+                            Welcome back please enter your details here
+                        </p>
+                        <form action="" class="auth-form mt-4 needs-validation" novalidate>
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Email</label>
+                                <input type="email" name="email" class="form-control p-3" id="email"
+                                    placeholder="enter your email" required>
+                                <div class="valid-feedback">
+                                    Looks good!
+                                </div>
+                            </div>
+                            <div class="mb-3 showPassword">
+                                <label for="password" class="form-label">Password</label>
+                                <input type="password" name="password" class="form-control p-3" id="password"
+                                    placeholder="*********" required>
+                                <i class="ri-eye-off-line hideEye"></i>
+                                <div class="valid-feedback">
+                                    Looks good!
+                                </div>
+                            </div>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="mb-4 form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="rememberMe">
+                                    <label class="form-check-label" for="rememberMe">
+                                        Remember for 30 days
+                                    </label>
+                                </div>
+                                <div class="mb-4 forgotPws">
+                                    <a href="forgot-pws.html">Forgot password?</a>
+                                </div>
+                            </div>
+                            <div class="mb-4">
+                                <!-- <button class="theme-btn w-100 p-3 rounded-2" type="submit">Sign in</button> -->
+                                <a href="setup-account.html"
+                                    class="theme-btn text-center w-100 d-block p-3 rounded-2">Sign in</a>
+                            </div>
+                            <div class="mb-4">
+                                <button class="signInWithGoogle w-100 p-3 rounded-2" type="submit">
+
+                                    <img src="assets/images/icon/google.svg" class="me-2" alt="google"> Sign in with
+                                    Google
+
+                                </button>
+                            </div>
+                            <div class="mb-4 text-center signUp">
+                                <p>
+                                    Don't have an account? <a href="signup.html">Sign up</a>
+                                </p>
+                            </div>
+                        </form>
+
+                    </div>
+                </div>
+                <div class="col-xl-6 m-0 p-0">
+                    <div class="auth-img">
+                        <img src="assets/images/auth/hug.png" alt="hug">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- ==== Script File ==== -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Form Validation  -->
+    <script>
+        (() => {
+            'use strict'
+
+            // Fetch all the forms we want to apply custom Bootstrap validation styles to
+            const forms = document.querySelectorAll('.needs-validation')
+
+            // Loop over them and prevent submission
+            Array.from(forms).forEach(form => {
+                form.addEventListener('submit', event => {
+                    if (!form.checkValidity()) {
+                        event.preventDefault()
+                        event.stopPropagation()
+                    }
+
+                    form.classList.add('was-validated')
+                }, false)
+            })
+        })()
+    </script>
+</body>
+
+</html>
